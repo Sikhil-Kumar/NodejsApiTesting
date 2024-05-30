@@ -11,7 +11,9 @@ app.use(express.json())
 //Available Routes
 
 app.use('/api/auth', require('./routes/auth'))
+app.use('/posts', require('./routes/posts'));
+
 
 app.listen(port, () => {
-  console.log(`iNootbook backend  listening on port ${port}`)
+  console.log(` backend  listening on port ${port}`)
 })
